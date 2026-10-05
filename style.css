@@ -10,3 +10,6 @@
 .back-link{font:600 14px 'IBM Plex Mono',monospace;letter-spacing:1.5px;color:#22D3EE;border:2px solid #22D3EE;border-radius:6px;padding:10px 18px;text-decoration:none;white-space:nowrap;box-shadow:0 0 14px #22d3ee55,inset 0 0 10px #22d3ee22;transition:background .15s,box-shadow .15s}
 .back-link:hover,.back-link:focus-visible{color:#0b1210;background:#22D3EE;box-shadow:0 0 22px #22d3eeaa}
 @media(max-width:620px){.masthead-actions{gap:12px}.back-link{font-size:11px;padding:7px 10px;letter-spacing:1px}}
+.device-note{display:none;border:2px solid var(--yellow);background:#e7c3651a;padding:14px 16px;margin-bottom:22px;font:12px/1.5 'IBM Plex Mono',monospace;color:var(--text)}
+.device-note strong{display:block;color:var(--yellow);font-size:14px;letter-spacing:1.5px;margin-bottom:4px}
+@media(hover:none) and (pointer:coarse){.device-note{display:block}}
