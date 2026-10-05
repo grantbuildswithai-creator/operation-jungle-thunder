@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101711" />
+  <title>Operation Jungle Thunder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="./"><span class="brand-mark">JT</span><span>GRANT BUILDS WITH AI <small>ARCADE DIVISION / 001</small></span></a><div class="status"><i></i> LOCAL ARCADE <span>•</span> SINGLE PLAYER</div><button id="sound" class="text-button" aria-pressed="false">SOUND OFF</button></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">1987 · CLASSIFIED OPERATIONS</p><h1>OPERATION <span>JUNGLE THUNDER</span></h1></div><p class="intro-note">One soldier. Four prisoners.<br>A jungle standing in your way.</p></section>
+    <div class="game-layout">
+      <aside class="left-rail"><section class="dossier"><p class="eyebrow">MISSION DOSSIER</p><h2>Bring them home.</h2><p>Infiltrate the valley. Breach the prison camp. Get our people to the extraction zone.</p><div class="mission-route"><div id="route-0" class="active"><b>01</b><span>Jungle approach<small>ENTER HOSTILE TERRITORY</small></span></div><div id="route-1"><b>02</b><span>Defensive line<small>BREAK THROUGH</small></span></div><div id="route-2"><b>03</b><span>River crossing<small>KEEP MOVING NORTH</small></span></div><div id="route-3"><b>04</b><span>Prison camp<small>FREE THE PRISONERS</small></span></div><div id="route-4"><b>05</b><span>Extraction<small>SECURE THE LANDING ZONE</small></span></div></div></section><div class="field-note"><span>FIELD NOTE / 01</span><p>Your weapon follows your movement. Stop moving to hold your aim.</p></div></aside>
+      <section class="arcade" aria-label="Operation Jungle Thunder game">
+        <div class="cabinet-top"><span><i></i> LIVE FIELD FEED</span><span id="stage-label">SECTOR 01 / JUNGLE</span></div>
+        <div class="viewport"><canvas id="game" width="480" height="640" tabindex="0" aria-label="Game battlefield. Move with WASD or arrow keys, throw grenades with Right Shift, and pause with Escape."></canvas>
+          <div class="screen-overlay" id="overlay"><div class="overlay-content"><span class="insignia">★</span><p class="eyebrow" id="overlay-kicker">OPERATION 001</p><h2 id="overlay-title">JUNGLE<br>THUNDER</h2><p id="overlay-description">The rescue starts with you.<br>Move north. Leave no one behind.</p><button class="primary-button" id="start">DEPLOY <span>→</span></button><p id="overlay-footnote" class="overlay-footnote">WASD / ARROWS TO MOVE · RIGHT SHIFT FOR GRENADES</p></div></div>
+        </div>
+        <div class="cabinet-bottom"><span>AUTO FIRE <b>ON</b></span><span id="controller-status">KEYBOARD READY</span><button id="pause" class="text-button">PAUSE Ⅱ</button><button id="fullscreen" class="text-button" aria-label="Toggle fullscreen (F)">FULLSCREEN ⛶</button></div>
+      </section>
+      <aside class="right-rail"><section class="telemetry"><p class="eyebrow">COMBAT STATUS</p><div class="score-row"><span>SCORE</span><strong id="score">000000</strong></div><div class="best-row"><span>PERSONAL BEST</span><b id="best">000000</b></div><div class="stat-line"><span>HEALTH</span><div id="health" class="health-bars"><i></i><i></i><i></i></div></div><div class="stat-line"><span>LIVES</span><strong id="lives">03</strong></div><div class="stat-line"><span>GRENADES</span><strong><span id="grenades">10</span><small> / 10</small></strong></div><div class="weapon-box"><span>WEAPON</span><b id="weapon">STANDARD RIFLE</b><div class="meter"><i id="weapon-meter"></i></div></div></section><section class="controls"><p class="eyebrow">FIELD CONTROLS</p><div><kbd>W A S D</kbd><span>Move & aim</span></div><div><kbd>R SHIFT</kbd><span>Grenade</span></div><div><kbd>ESC</kbd><span>Pause</span></div><div><kbd>F</kbd><span>Fullscreen</span></div><p>Arrow keys also supported.<br>Controller: stick / D-pad + A / Cross.</p></section><section class="radio"><span><i></i> RADIO / HQ</span><p id="radio-text" aria-live="polite">“Get into the valley. Find the camp. We’ll have a bird waiting.”</p></section></aside>
+    </div>
+    <footer><span>AN ORIGINAL BROWSER ARCADE BY GRANT BUILDS WITH AI</span><span>DESKTOP + CONTROLLER <b>◆</b> V0.1 / FIRST PLAYABLE</span></footer>
+  </main>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
+
